@@ -99,14 +99,14 @@ main .mtxt{
     top: 160px; left: 5%; bottom: 100px;
     padding: 3rem;
     /* align-items: center; */
-    border: 1px solid; 
+    /* border: 1px solid;  */
 }
 main .mtxt .effectimg{
     /* border: 1px solid forestgreen; */
     background: url("./images/4859FE54-08BE-4150-A996-FF945C0FE28A.png") center;
     width: 30px;
-    height: 24px;
-    margin: 0 0 0 -1.3rem;
+    height: 26px;
+    margin: 0 0 0 -1.2rem;
     position: absolute;
 }
 main .mtxt .effect{
@@ -115,7 +115,7 @@ main .mtxt .effect{
     background: #fff;
     opacity: 0; 
     border-radius: 50%;
-    margin: 2.5rem 2rem 1rem 0rem;
+    margin: 2rem 2rem 1rem 0rem;
     transition: .8s;
     /* border: 1px solid blue; */
 }
