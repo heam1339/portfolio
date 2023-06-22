@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 *{
     padding: 0;
@@ -31,6 +32,9 @@ img{
 address{
     font-style: normal;
 }
+.Russo{
+    font-family: 'Russo One', sans-serif;
+}
 /* head */
 header{
     /* padding: 3rem; */
@@ -39,14 +43,15 @@ header{
 }
 header .boxalign{
     position: relative;
-    /* z-index: 1; */
+    z-index: 1;
 }
 header .bg{
     width: 1100px;
-    height: 75px;
+    height: 80px;
     background-color: #000;
     position: absolute;
     opacity: .3;
+    z-index: 1;
 }
 header .contents{
     padding: 1rem 3rem;
@@ -75,10 +80,80 @@ header nav li a{
     padding-bottom: 0.6rem;
     /* border: 1px solid red; */
 }
+
+/* main */
 main{
-    /* overflow: hidden; */
+    position: relative;
+    overflow: hidden;
 }
 main .mbg{
     background: url("./images/main_bg.jpg") center / cover;
     height: 600px;
+    width: 100%;
+    transition: .7s;
+}
+main .mtxt{
+    color: #fff;
+    display: flex;
+    position: absolute;
+    top: 160px; left: 5%; bottom: 100px;
+    padding: 3rem;
+    /* align-items: center; */
+    border: 1px solid; 
+}
+main .mtxt .effectimg{
+    /* border: 1px solid forestgreen; */
+    background: url("./images/4859FE54-08BE-4150-A996-FF945C0FE28A.png") center;
+    width: 30px;
+    height: 24px;
+    margin: 0 0 0 -1.3rem;
+    position: absolute;
+}
+main .mtxt .effect{
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    opacity: 0; 
+    border-radius: 50%;
+    margin: 2.5rem 2rem 1rem 0rem;
+    transition: .8s;
+    /* border: 1px solid blue; */
+}
+main .text h2{
+    font-size: 6rem;
+    transition: .7s;
+}
+
+main .text p{
+    font-size: 1.8rem;
+    color: #fff;
+    margin-top: 1.5rem;
+    transition: .7s;
+}
+main .text a{
+    display: inline-block;
+    font-size: 1.2rem;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    /* opacity: .7; */
+    margin-top: 3rem;
+    transition: .7s-;
+}
+/* hover 적용시 */
+main:hover .mbg{
+    transform: scale(1.2);
+}
+main:hover .effect{
+    background: red;
+    height: 123px;
+    width: 1px;
+    border-radius: 0;
+    opacity: 1;
+}
+main:hover a{
+    color:red;
+}
+main:hover h2{
+    color: red;
 }
